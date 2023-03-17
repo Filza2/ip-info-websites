@@ -17,6 +17,8 @@ def ip_info():
     
     r3=get(f'https://ipinfo.io/widget/demo/{ip}',headers={'Host': 'ipinfo.io','User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0','Accept': '*/*','Accept-Language': 'ar,en-US;q=0.7,en;q=0.3','Accept-Encoding': 'gzip, deflate','Referer': 'https://ipinfo.io/','Content-Type': 'application/json','Sec-Fetch-Dest': 'empty','Sec-Fetch-Mode': 'cors','Sec-Fetch-Site': 'same-origin','Te': 'trailers'}) # request 3 to get ip info 
     
-    return r1.text+r2.text+r3.text
+    r4=get('https://api.ipdata.co/?api-key=049141253a70eee2f51ffb1c144aa9a37c1503cb09b9a47d6fc956c6',headers=user_agent) # request 4 to get ip info 
+    
+    return r1.text+r2.text+r3.text+r4.text
 
 print(ip_info())
