@@ -1,7 +1,9 @@
 from requests import get
-user_agent={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0'}
+
 # By @TweakPY - @vv1ck
 # IP information sites, some of which are APIs for developers and programmers
+
+user_agent={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0'}
 
 def ip_info():
   
@@ -19,6 +21,10 @@ def ip_info():
     
     r4=get('https://api.ipdata.co/?api-key=049141253a70eee2f51ffb1c144aa9a37c1503cb09b9a47d6fc956c6',headers=user_agent) # request 4 to get ip info 
     
-    return r1.text+r2.text+r3.text+r4.text
+    return r1.text+r2.text+r3.text+r4.text # Return all the results of the above requstats
 
-print(ip_info())
+  
+  
+  
+  
+print(ip_info()) # print the results 
