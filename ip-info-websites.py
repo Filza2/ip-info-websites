@@ -1,7 +1,7 @@
 from requests import get
 user_agent={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0'}
 # By @TweakPY - @vv1ck
-# 
+# IP information sites, some of which are APIs for developers and programmers
 
 def ip_info():
   
